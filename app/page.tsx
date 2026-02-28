@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { readmoreblog } from "@/lib/actions/blog"; 
 import { IBlog } from "@/lib/types"
-import { InstagramEmbed } from './blog/[id]/components/Instagramembed';
+import { InstagramEmbed } from '@/components/Instagramembed';
 function extractImageUrlsFromMarkdown(markdown: string): string[] {
   const imageUrls: string[] = [];
   const markdownImageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
